@@ -1,0 +1,17 @@
+[flake8]
+statistics = True
+
+select = E,F,W,C,B,S,T,Q
+
+format = pylint
+hang-closing = false
+
+max-line-length = 120
+inline-quotes = single
+
+disable-noqa = True
+exclude =
+    .git,
+    __pycache__,
+    build,
+    dist,
