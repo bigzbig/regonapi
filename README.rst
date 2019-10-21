@@ -1,13 +1,20 @@
 regonapi
 ========
 
-Client of the `'API REGON' <https://api.stat.gov.pl/Home/RegonApi>`_ - internet database of the GUS - Główny Urząd Statystyczny (ang. The Central Statistical Office). Enables searching for detailed information about Polish companies based on selected identifiers, such as:
+Client of the `'API REGON' <https://api.stat.gov.pl/Home/RegonApi>`_ (v BIR1.1) - internet database of the GUS - Główny Urząd Statystyczny (ang. The Central Statistical Office). Enables searching for detailed information about Polish companies based on selected identifiers, such as:
 
 - NIP - Tax ID,
 - REGON - National Business Registry Number
 - KRS - National Court Register Number
 
 `GUS (Główny Urząd Statystyczny) REGON <https://wyszukiwarkaregon.stat.gov.pl/appBIR/index.aspx>`_ Internet Database client which allows to get detailed information about company based on NIP, Regon or KRS number.
+
+Requirements
+------------
+
+- python >= 3.6
+- zeep
+- lxml
 
 It requires an **API key** to obtainable as described on the help page `Registration <https://api.stat.gov.pl/Home/RegonApi>`_.
 
