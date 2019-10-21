@@ -86,7 +86,7 @@ class RegonAPI:
             )
         except KeyError:
             raise ValueError("The company_data parameter should be single item of result of method 'find_by'")
-        return [self._format(item, remove_prefix=True) for item in objectify.fromstring(result).dane]
+        return self._format(objectify.fromstring(result).dane, remove_prefix=True)
 
     def get_pkd(self, company_data: Dict[str, Any]) -> List[Dict[str, Any]]:
         field_map = [

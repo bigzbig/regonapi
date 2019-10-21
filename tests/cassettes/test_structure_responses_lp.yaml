@@ -1,0 +1,243 @@
+interactions:
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj</wsa:Action><wsa:MessageID>urn:uuid:5a16edfd-d263-48a1-8597-1af1e4618053</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:Zaloguj
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pKluczUzytkownika>abcde12345abcde12345</ns0:pKluczUzytkownika></ns0:Zaloguj></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '625'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"'
+      sid:
+      - b2k628e3k9b6sm65hx6n
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2240\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/ZalogujResponse</a:Action><a:RelatesTo>urn:uuid:5a16edfd-d263-48a1-8597-1af1e4618053</a:RelatesTo></s:Header><s:Body><ZalogujResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><ZalogujResult>4726f23bz24889zg5z26</ZalogujResult></ZalogujResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2240--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '718'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2240";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:57 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty</wsa:Action><wsa:MessageID>urn:uuid:957526a4-2ae6-4de4-871f-ffbf094586fa</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DaneSzukajPodmioty
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pParametryWyszukiwania><ns1:Regon
+      xmlns:ns1="http://CIS/BIR/PUBL/2014/07/DataContract">27659249800038</ns1:Regon></ns0:pParametryWyszukiwania></ns0:DaneSzukajPodmioty></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '738'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"'
+      sid:
+      - 4726f23bz24889zg5z26
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2241\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action><a:RelatesTo>urn:uuid:957526a4-2ae6-4de4-871f-ffbf094586fa</a:RelatesTo></s:Header><s:Body><DaneSzukajPodmiotyResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;Regon&gt;27659249800038&lt;/Regon&gt;&#xD;\n\
+        \    &lt;Nip /&gt;&#xD;\n    &lt;StatusNip /&gt;&#xD;\n    &lt;Nazwa&gt;APTEKA\
+        \ \"EUROPEJSKA\"&lt;/Nazwa&gt;&#xD;\n    &lt;Wojewodztwo&gt;\u015AL\u0104\
+        SKIE&lt;/Wojewodztwo&gt;&#xD;\n    &lt;Powiat&gt;m. Katowice&lt;/Powiat&gt;&#xD;\n\
+        \    &lt;Gmina&gt;M. Katowice&lt;/Gmina&gt;&#xD;\n    &lt;Miejscowosc&gt;Katowice&lt;/Miejscowosc&gt;&#xD;\n\
+        \    &lt;KodPocztowy&gt;40-026&lt;/KodPocztowy&gt;&#xD;\n    &lt;Ulica&gt;ul.\
+        \ Test-Wilcza&lt;/Ulica&gt;&#xD;\n    &lt;NrNieruchomosci&gt;7&lt;/NrNieruchomosci&gt;&#xD;\n\
+        \    &lt;NrLokalu /&gt;&#xD;\n    &lt;Typ&gt;LP&lt;/Typ&gt;&#xD;\n    &lt;SilosID&gt;6&lt;/SilosID&gt;&#xD;\n\
+        \    &lt;DataZakonczeniaDzialalnosci /&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2241--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1514'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2241";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:57 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:a51365e5-8053-4a91-ae5f-fe24c1ce92be</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>27659249800038</ns0:pRegon><ns0:pNazwaRaportu>PublDaneRaportDzialalnosciFizycznej</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '716'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - 4726f23bz24889zg5z26
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2242\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:a51365e5-8053-4a91-ae5f-fe24c1ce92be</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;fiz_pkd_Kod&gt;4773Z&lt;/fiz_pkd_Kod&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Nazwa&gt;SPRZEDA\u017B DETALICZNA WYROB\xD3W FARMACEUTYCZNYCH\
+        \ PROWADZONA W WYSPECJALIZOWANYCH SKLEPACH&lt;/fiz_pkd_Nazwa&gt;&#xD;\n  \
+        \  &lt;fiz_pkd_Przewazajace&gt;1&lt;/fiz_pkd_Przewazajace&gt;&#xD;\n    &lt;fiz_Silos_Symbol&gt;Prawna&lt;/fiz_Silos_Symbol&gt;&#xD;\n\
+        \  &lt;/dane&gt;&#xD;\n  &lt;dane&gt;&#xD;\n    &lt;fiz_pkd_Kod&gt;2120Z&lt;/fiz_pkd_Kod&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Nazwa&gt;PRODUKCJA LEK\xD3W I POZOSTA\u0141YCH WYROB\xD3\
+        W FARMACEUTYCZNYCH&lt;/fiz_pkd_Nazwa&gt;&#xD;\n    &lt;fiz_pkd_Przewazajace&gt;0&lt;/fiz_pkd_Przewazajace&gt;&#xD;\n\
+        \    &lt;fiz_Silos_Symbol&gt;Prawna&lt;/fiz_Silos_Symbol&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        &lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2242--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1510'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2242";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:57 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:90629038-1ab9-45f9-b827-e94d59e40631</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>27659249800038</ns0:pRegon><ns0:pNazwaRaportu>BIR11JednLokalnaOsPrawnej</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '706'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - 4726f23bz24889zg5z26
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2243\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:90629038-1ab9-45f9-b827-e94d59e40631</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;lokpraw_regon14&gt;27659249800038&lt;/lokpraw_regon14&gt;&#xD;\n\
+        \    &lt;lokpraw_nazwa&gt;APTEKA \"EUROPEJSKA\"&lt;/lokpraw_nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_numerWrejestrzeEwidencji&gt;0688/99        &lt;/lokpraw_numerWrejestrzeEwidencji&gt;&#xD;\n\
+        \    &lt;lokpraw_dataWpisuDoRejestruEwidencji&gt;1999-08-25&lt;/lokpraw_dataWpisuDoRejestruEwidencji&gt;&#xD;\n\
+        \    &lt;lokpraw_dataPowstania&gt;1999-08-25&lt;/lokpraw_dataPowstania&gt;&#xD;\n\
+        \    &lt;lokpraw_dataRozpoczeciaDzialalnosci&gt;1999-08-25&lt;/lokpraw_dataRozpoczeciaDzialalnosci&gt;&#xD;\n\
+        \    &lt;lokpraw_dataWpisuDoRegon /&gt;&#xD;\n    &lt;lokpraw_dataZawieszeniaDzialalnosci\
+        \ /&gt;&#xD;\n    &lt;lokpraw_dataWznowieniaDzialalnosci /&gt;&#xD;\n    &lt;lokpraw_dataZaistnieniaZmiany&gt;2008-11-25&lt;/lokpraw_dataZaistnieniaZmiany&gt;&#xD;\n\
+        \    &lt;lokpraw_dataZakonczeniaDzialalnosci /&gt;&#xD;\n    &lt;lokpraw_dataSkresleniaZRegon\
+        \ /&gt;&#xD;\n    &lt;lokpraw_adSiedzKraj_Symbol&gt;PL&lt;/lokpraw_adSiedzKraj_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzWojewodztwo_Symbol&gt;24&lt;/lokpraw_adSiedzWojewodztwo_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzPowiat_Symbol&gt;69&lt;/lokpraw_adSiedzPowiat_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzGmina_Symbol&gt;011&lt;/lokpraw_adSiedzGmina_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzKodPocztowy&gt;40026&lt;/lokpraw_adSiedzKodPocztowy&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzMiejscowoscPoczty_Symbol&gt;0937474&lt;/lokpraw_adSiedzMiejscowoscPoczty_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzMiejscowosc_Symbol&gt;0937474&lt;/lokpraw_adSiedzMiejscowosc_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzUlica_Symbol&gt;24261&lt;/lokpraw_adSiedzUlica_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzNumerNieruchomosci&gt;7&lt;/lokpraw_adSiedzNumerNieruchomosci&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzNumerLokalu /&gt;&#xD;\n    &lt;lokpraw_adSiedzNietypoweMiejsceLokalizacji\
+        \ /&gt;&#xD;\n    &lt;lokpraw_adSiedzKraj_Nazwa&gt;POLSKA&lt;/lokpraw_adSiedzKraj_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzWojewodztwo_Nazwa&gt;\u015AL\u0104SKIE&lt;/lokpraw_adSiedzWojewodztwo_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzPowiat_Nazwa&gt;m. Katowice&lt;/lokpraw_adSiedzPowiat_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzGmina_Nazwa&gt;M. Katowice&lt;/lokpraw_adSiedzGmina_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzMiejscowosc_Nazwa&gt;Katowice&lt;/lokpraw_adSiedzMiejscowosc_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzMiejscowoscPoczty_Nazwa&gt;Katowice&lt;/lokpraw_adSiedzMiejscowoscPoczty_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_adSiedzUlica_Nazwa&gt;ul. Test-Wilcza&lt;/lokpraw_adSiedzUlica_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_formaFinansowania_Symbol&gt;0&lt;/lokpraw_formaFinansowania_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_organRejestrowy_Symbol&gt;021270000&lt;/lokpraw_organRejestrowy_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_rodzajRejestruEwidencji_Symbol&gt;036&lt;/lokpraw_rodzajRejestruEwidencji_Symbol&gt;&#xD;\n\
+        \    &lt;lokpraw_formaFinansowania_Nazwa&gt;JEDNOSTKA LOKALNA NIE BILANSUJ\u0104\
+        CA SAMODZIELNIE&lt;/lokpraw_formaFinansowania_Nazwa&gt;&#xD;\n    &lt;lokpraw_organRejestrowy_Nazwa&gt;OKR\u0118\
+        GOWA RADA APTEKARSKA KATOWICE&lt;/lokpraw_organRejestrowy_Nazwa&gt;&#xD;\n\
+        \    &lt;lokpraw_rodzajRejestruEwidencji_Nazwa&gt;REJESTR APTEK&lt;/lokpraw_rodzajRejestruEwidencji_Nazwa&gt;&#xD;\n\
+        \  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2243--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '4001'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2243";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:57 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

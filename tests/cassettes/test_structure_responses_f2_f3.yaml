@@ -1,0 +1,378 @@
+interactions:
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj</wsa:Action><wsa:MessageID>urn:uuid:3ec2ed2b-2ee4-4cf5-9d30-2cace3bd6a1c</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:Zaloguj
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pKluczUzytkownika>abcde12345abcde12345</ns0:pKluczUzytkownika></ns0:Zaloguj></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '625'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"'
+      sid:
+      - 67yvkmp78rekbp3pmfyg
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2259\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/ZalogujResponse</a:Action><a:RelatesTo>urn:uuid:3ec2ed2b-2ee4-4cf5-9d30-2cace3bd6a1c</a:RelatesTo></s:Header><s:Body><ZalogujResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><ZalogujResult>t2g22t6dm3386cve55x6</ZalogujResult></ZalogujResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2259--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '718'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2259";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:57:03 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty</wsa:Action><wsa:MessageID>urn:uuid:f97e0600-1c04-4f96-a93b-960574ebfce0</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DaneSzukajPodmioty
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pParametryWyszukiwania><ns1:Nip
+      xmlns:ns1="http://CIS/BIR/PUBL/2014/07/DataContract">8841496742</ns1:Nip></ns0:pParametryWyszukiwania></ns0:DaneSzukajPodmioty></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '730'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"'
+      sid:
+      - t2g22t6dm3386cve55x6
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2260\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action><a:RelatesTo>urn:uuid:f97e0600-1c04-4f96-a93b-960574ebfce0</a:RelatesTo></s:Header><s:Body><DaneSzukajPodmiotyResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;Regon&gt;891461403&lt;/Regon&gt;&#xD;\n    &lt;Nip&gt;8841496742&lt;/Nip&gt;&#xD;\n\
+        \    &lt;StatusNip /&gt;&#xD;\n    &lt;Nazwa&gt;INDYWIDUALNE GOSPODARSTWO\
+        \ ROLNE  DANUTA XXXXXXXX&lt;/Nazwa&gt;&#xD;\n    &lt;Wojewodztwo&gt;DOLNO\u015A\
+        L\u0104SKIE&lt;/Wojewodztwo&gt;&#xD;\n    &lt;Powiat&gt;\u015Bwidnicki&lt;/Powiat&gt;&#xD;\n\
+        \    &lt;Gmina&gt;\u015Awidnica&lt;/Gmina&gt;&#xD;\n    &lt;Miejscowosc&gt;Witosz\xF3\
+        w G\xF3rny&lt;/Miejscowosc&gt;&#xD;\n    &lt;KodPocztowy&gt;58-100&lt;/KodPocztowy&gt;&#xD;\n\
+        \    &lt;NrNieruchomosci&gt;XX&lt;/NrNieruchomosci&gt;&#xD;\n    &lt;NrLokalu\
+        \ /&gt;&#xD;\n    &lt;Typ&gt;F&lt;/Typ&gt;&#xD;\n    &lt;SilosID&gt;2&lt;/SilosID&gt;&#xD;\n\
+        \    &lt;DataZakonczeniaDzialalnosci /&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n  &lt;dane&gt;&#xD;\n\
+        \    &lt;Regon&gt;891461403&lt;/Regon&gt;&#xD;\n    &lt;Nip&gt;8841496742&lt;/Nip&gt;&#xD;\n\
+        \    &lt;StatusNip /&gt;&#xD;\n    &lt;Nazwa&gt;AGROTURYSTYKA  DANUTA XXXXXXXX&lt;/Nazwa&gt;&#xD;\n\
+        \    &lt;Wojewodztwo&gt;DOLNO\u015AL\u0104SKIE&lt;/Wojewodztwo&gt;&#xD;\n\
+        \    &lt;Powiat&gt;\u015Bwidnicki&lt;/Powiat&gt;&#xD;\n    &lt;Gmina&gt;\u015A\
+        widnica&lt;/Gmina&gt;&#xD;\n    &lt;Miejscowosc&gt;Witosz\xF3w G\xF3rny&lt;/Miejscowosc&gt;&#xD;\n\
+        \    &lt;KodPocztowy&gt;58-100&lt;/KodPocztowy&gt;&#xD;\n    &lt;NrNieruchomosci&gt;XX&lt;/NrNieruchomosci&gt;&#xD;\n\
+        \    &lt;NrLokalu /&gt;&#xD;\n    &lt;Typ&gt;F&lt;/Typ&gt;&#xD;\n    &lt;SilosID&gt;3&lt;/SilosID&gt;&#xD;\n\
+        \    &lt;DataZakonczeniaDzialalnosci /&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2260--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '2230'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2260";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:57:03 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:045f9929-5042-4720-87db-0a1d6fc06edc</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>891461403</ns0:pRegon><ns0:pNazwaRaportu>PublDaneRaportDzialalnosciFizycznej</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '711'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - t2g22t6dm3386cve55x6
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2261\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:045f9929-5042-4720-87db-0a1d6fc06edc</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;fiz_pkd_Kod&gt;5520Z&lt;/fiz_pkd_Kod&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Nazwa&gt;OBIEKTY NOCLEGOWE TURYSTYCZNE I MIEJSCA KR\xD3TKOTRWA\u0141\
+        EGO ZAKWATEROWANIA&lt;/fiz_pkd_Nazwa&gt;&#xD;\n    &lt;fiz_pkd_Przewazajace&gt;1&lt;/fiz_pkd_Przewazajace&gt;&#xD;\n\
+        \    &lt;fiz_Silos_Symbol&gt;Inna&lt;/fiz_Silos_Symbol&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;fiz_pkd_Kod&gt;0150Z&lt;/fiz_pkd_Kod&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Nazwa&gt;UPRAWY ROLNE PO\u0141\u0104CZONE Z CHOWEM I HODOWL\u0104\
+        \ ZWIERZ\u0104T (DZIA\u0141ALNO\u015A\u0106 MIESZANA)&lt;/fiz_pkd_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Przewazajace&gt;1&lt;/fiz_pkd_Przewazajace&gt;&#xD;\n   \
+        \ &lt;fiz_Silos_Symbol&gt;Rolnicza&lt;/fiz_Silos_Symbol&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        &lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2261--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1517'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2261";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:57:03 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:428c121f-da13-47b6-aff5-e6411173aae6</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>891461403</ns0:pRegon><ns0:pNazwaRaportu>BIR11OsFizycznaDzialalnoscRolnicza</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '710'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - t2g22t6dm3386cve55x6
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2262\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:428c121f-da13-47b6-aff5-e6411173aae6</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;fiz_regon9&gt;891461403&lt;/fiz_regon9&gt;&#xD;\n\
+        \    &lt;fiz_nazwa&gt;INDYWIDUALNE GOSPODARSTWO ROLNE  DANUTA XXXXXXXX&lt;/fiz_nazwa&gt;&#xD;\n\
+        \    &lt;fiz_nazwaSkrocona&gt;XXXXXXXX D.GOSP.ROL.,WITOSZ\xD3W GR.&lt;/fiz_nazwaSkrocona&gt;&#xD;\n\
+        \    &lt;fiz_dataPowstania&gt;2001-05-15&lt;/fiz_dataPowstania&gt;&#xD;\n\
+        \    &lt;fiz_dataRozpoczeciaDzialalnosci&gt;2001-05-15&lt;/fiz_dataRozpoczeciaDzialalnosci&gt;&#xD;\n\
+        \    &lt;fiz_dataWpisuDzialalnosciDoRegon /&gt;&#xD;\n    &lt;fiz_dataZawieszeniaDzialalnosci\
+        \ /&gt;&#xD;\n    &lt;fiz_dataWznowieniaDzialalnosci /&gt;&#xD;\n    &lt;fiz_dataZaistnieniaZmianyDzialalnosci&gt;2009-05-14&lt;/fiz_dataZaistnieniaZmianyDzialalnosci&gt;&#xD;\n\
+        \    &lt;fiz_dataZakonczeniaDzialalnosci /&gt;&#xD;\n    &lt;fiz_dataSkresleniaDzialalanosciZRegon\
+        \ /&gt;&#xD;\n    &lt;fiz_dataOrzeczeniaOUpadlosci /&gt;&#xD;\n    &lt;fiz_dataZakonczeniaPostepowaniaUpadlosciowego\
+        \ /&gt;&#xD;\n    &lt;fiz_adSiedzKraj_Symbol /&gt;&#xD;\n    &lt;fiz_adSiedzWojewodztwo_Symbol&gt;02&lt;/fiz_adSiedzWojewodztwo_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzPowiat_Symbol&gt;19&lt;/fiz_adSiedzPowiat_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzGmina_Symbol&gt;072&lt;/fiz_adSiedzGmina_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzKodPocztowy&gt;58100&lt;/fiz_adSiedzKodPocztowy&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowoscPoczty_Symbol&gt;0984657&lt;/fiz_adSiedzMiejscowoscPoczty_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowosc_Symbol&gt;0856327&lt;/fiz_adSiedzMiejscowosc_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzUlica_Symbol /&gt;&#xD;\n    &lt;fiz_adSiedzNumerNieruchomosci&gt;XX&lt;/fiz_adSiedzNumerNieruchomosci&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzNumerLokalu /&gt;&#xD;\n    &lt;fiz_adSiedzNietypoweMiejsceLokalizacji\
+        \ /&gt;&#xD;\n    &lt;fiz_numerTelefonu /&gt;&#xD;\n    &lt;fiz_numerWewnetrznyTelefonu\
+        \ /&gt;&#xD;\n    &lt;fiz_numerFaksu /&gt;&#xD;\n    &lt;fiz_adresEmail /&gt;&#xD;\n\
+        \    &lt;fiz_adresStronyinternetowej /&gt;&#xD;\n    &lt;fiz_adSiedzKraj_Nazwa\
+        \ /&gt;&#xD;\n    &lt;fiz_adSiedzWojewodztwo_Nazwa&gt;DOLNO\u015AL\u0104SKIE&lt;/fiz_adSiedzWojewodztwo_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzPowiat_Nazwa&gt;\u015Bwidnicki&lt;/fiz_adSiedzPowiat_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzGmina_Nazwa&gt;\u015Awidnica&lt;/fiz_adSiedzGmina_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowosc_Nazwa&gt;Witosz\xF3w G\xF3rny&lt;/fiz_adSiedzMiejscowosc_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowoscPoczty_Nazwa&gt;\u015Awidnica&lt;/fiz_adSiedzMiejscowoscPoczty_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzUlica_Nazwa /&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2262--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '3273'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2262";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:57:03 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:c4b4a2a5-c539-42f0-9747-6fcf0b8db4d3</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>891461403</ns0:pRegon><ns0:pNazwaRaportu>PublDaneRaportDzialalnosciFizycznej</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '711'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - t2g22t6dm3386cve55x6
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2263\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:c4b4a2a5-c539-42f0-9747-6fcf0b8db4d3</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;fiz_pkd_Kod&gt;5520Z&lt;/fiz_pkd_Kod&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Nazwa&gt;OBIEKTY NOCLEGOWE TURYSTYCZNE I MIEJSCA KR\xD3TKOTRWA\u0141\
+        EGO ZAKWATEROWANIA&lt;/fiz_pkd_Nazwa&gt;&#xD;\n    &lt;fiz_pkd_Przewazajace&gt;1&lt;/fiz_pkd_Przewazajace&gt;&#xD;\n\
+        \    &lt;fiz_Silos_Symbol&gt;Inna&lt;/fiz_Silos_Symbol&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;fiz_pkd_Kod&gt;0150Z&lt;/fiz_pkd_Kod&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Nazwa&gt;UPRAWY ROLNE PO\u0141\u0104CZONE Z CHOWEM I HODOWL\u0104\
+        \ ZWIERZ\u0104T (DZIA\u0141ALNO\u015A\u0106 MIESZANA)&lt;/fiz_pkd_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_pkd_Przewazajace&gt;1&lt;/fiz_pkd_Przewazajace&gt;&#xD;\n   \
+        \ &lt;fiz_Silos_Symbol&gt;Rolnicza&lt;/fiz_Silos_Symbol&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        &lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2263--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1517'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2263";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:57:03 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:75d70c64-9a17-43a7-9fb8-28e08c452e6d</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>891461403</ns0:pRegon><ns0:pNazwaRaportu>BIR11OsFizycznaDzialalnoscPozostala</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '711'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - t2g22t6dm3386cve55x6
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2264\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:75d70c64-9a17-43a7-9fb8-28e08c452e6d</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;fiz_regon9&gt;891461403&lt;/fiz_regon9&gt;&#xD;\n\
+        \    &lt;fiz_nazwa&gt;AGROTURYSTYKA  DANUTA XXXXXXXX&lt;/fiz_nazwa&gt;&#xD;\n\
+        \    &lt;fiz_nazwaSkrocona /&gt;&#xD;\n    &lt;fiz_dataPowstania&gt;2002-05-01&lt;/fiz_dataPowstania&gt;&#xD;\n\
+        \    &lt;fiz_dataRozpoczeciaDzialalnosci&gt;2002-05-01&lt;/fiz_dataRozpoczeciaDzialalnosci&gt;&#xD;\n\
+        \    &lt;fiz_dataWpisuDzialalnosciDoRegon /&gt;&#xD;\n    &lt;fiz_dataZawieszeniaDzialalnosci\
+        \ /&gt;&#xD;\n    &lt;fiz_dataWznowieniaDzialalnosci /&gt;&#xD;\n    &lt;fiz_dataZaistnieniaZmianyDzialalnosci&gt;2009-05-14&lt;/fiz_dataZaistnieniaZmianyDzialalnosci&gt;&#xD;\n\
+        \    &lt;fiz_dataZakonczeniaDzialalnosci /&gt;&#xD;\n    &lt;fiz_dataSkresleniaDzialalnosciZRegon\
+        \ /&gt;&#xD;\n    &lt;fiz_dataOrzeczeniaOUpadlosci /&gt;&#xD;\n    &lt;fiz_dataZakonczeniaPostepowaniaUpadlosciowego\
+        \ /&gt;&#xD;\n    &lt;fiz_adSiedzKraj_Symbol /&gt;&#xD;\n    &lt;fiz_adSiedzWojewodztwo_Symbol&gt;02&lt;/fiz_adSiedzWojewodztwo_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzPowiat_Symbol&gt;19&lt;/fiz_adSiedzPowiat_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzGmina_Symbol&gt;072&lt;/fiz_adSiedzGmina_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzKodPocztowy&gt;58100&lt;/fiz_adSiedzKodPocztowy&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowoscPoczty_Symbol&gt;0984657&lt;/fiz_adSiedzMiejscowoscPoczty_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowosc_Symbol&gt;0856327&lt;/fiz_adSiedzMiejscowosc_Symbol&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzUlica_Symbol /&gt;&#xD;\n    &lt;fiz_adSiedzNumerNieruchomosci&gt;XX&lt;/fiz_adSiedzNumerNieruchomosci&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzNumerLokalu /&gt;&#xD;\n    &lt;fiz_adSiedzNietypoweMiejsceLokalizacji\
+        \ /&gt;&#xD;\n    &lt;fiz_numerTelefonu /&gt;&#xD;\n    &lt;fiz_numerWewnetrznyTelefonu\
+        \ /&gt;&#xD;\n    &lt;fiz_numerFaksu /&gt;&#xD;\n    &lt;fiz_adresEmail /&gt;&#xD;\n\
+        \    &lt;fiz_adresStronyinternetowej /&gt;&#xD;\n    &lt;fiz_adSiedzKraj_Nazwa\
+        \ /&gt;&#xD;\n    &lt;fiz_adSiedzWojewodztwo_Nazwa&gt;DOLNO\u015AL\u0104SKIE&lt;/fiz_adSiedzWojewodztwo_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzPowiat_Nazwa&gt;\u015Bwidnicki&lt;/fiz_adSiedzPowiat_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzGmina_Nazwa&gt;\u015Awidnica&lt;/fiz_adSiedzGmina_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowosc_Nazwa&gt;Witosz\xF3w G\xF3rny&lt;/fiz_adSiedzMiejscowosc_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzMiejscowoscPoczty_Nazwa&gt;\u015Awidnica&lt;/fiz_adSiedzMiejscowoscPoczty_Nazwa&gt;&#xD;\n\
+        \    &lt;fiz_adSiedzUlica_Nazwa /&gt;&#xD;\n    &lt;fizP_dataWpisuDoRejestruEwidencji\
+        \ /&gt;&#xD;\n    &lt;fizP_numerWRejestrzeEwidencji /&gt;&#xD;\n    &lt;fizP_OrganRejestrowy_Symbol\
+        \ /&gt;&#xD;\n    &lt;fizP_OrganRejestrowy_Nazwa /&gt;&#xD;\n    &lt;fizP_RodzajRejestru_Symbol&gt;099&lt;/fizP_RodzajRejestru_Symbol&gt;&#xD;\n\
+        \    &lt;fizP_RodzajRejestru_Nazwa&gt;PODMIOTY NIE PODLEGAJ\u0104CE WPISOM\
+        \ DO REJESTRU LUB EWIDENCJI&lt;/fizP_RodzajRejestru_Nazwa&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        &lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2264--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '3608'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2264";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:57:03 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

@@ -1,0 +1,331 @@
+interactions:
+- request:
+    body: null
+    headers: {}
+    method: GET
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/wsdl/UslugaBIRzewnPubl-ver11-test.wsdl
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\"?>\n<wsdl:definitions\
+        \ xmlns:i0=\"http://CIS/BIR/PUBL/2014/07\" xmlns:msc=\"http://schemas.microsoft.com/ws/2005/12/wsdl/contract\"\
+        \ xmlns:soap=\"http://schemas.xmlsoap.org/wsdl/soap/\" xmlns:soap12=\"http://schemas.xmlsoap.org/wsdl/soap12/\"\
+        \ xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:tns=\"\
+        http://tempuri.org/\" xmlns:wsa=\"http://schemas.xmlsoap.org/ws/2004/08/addressing\"\
+        \ xmlns:wsa10=\"http://www.w3.org/2005/08/addressing\" xmlns:wsam=\"http://www.w3.org/2007/05/addressing/metadata\"\
+        \ xmlns:wsap=\"http://schemas.xmlsoap.org/ws/2004/08/addressing/policy\" xmlns:wsaw=\"\
+        http://www.w3.org/2006/05/addressing/wsdl\" xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\"\
+        \ xmlns:wsp=\"http://schemas.xmlsoap.org/ws/2004/09/policy\" xmlns:wsu=\"\
+        http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd\"\
+        \ xmlns:wsx=\"http://schemas.xmlsoap.org/ws/2004/09/mex\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\
+        \ name=\"UslugaBIRzewnPubl\" targetNamespace=\"http://tempuri.org/\">\n  <wsp:Policy\
+        \ wsu:Id=\"e3_policy\">\n    <wsp:ExactlyOne>\n      <wsp:All>\n        <sp:TransportBinding\
+        \ xmlns:sp=\"http://schemas.xmlsoap.org/ws/2005/07/securitypolicy\">\n   \
+        \       <wsp:Policy>\n            <sp:TransportToken>\n              <wsp:Policy>\n\
+        \                <sp:HttpsToken RequireClientCertificate=\"false\"/>\n   \
+        \           </wsp:Policy>\n            </sp:TransportToken>\n            <sp:AlgorithmSuite>\n\
+        \              <wsp:Policy>\n                <sp:Basic256/>\n            \
+        \  </wsp:Policy>\n            </sp:AlgorithmSuite>\n            <sp:Layout>\n\
+        \              <wsp:Policy>\n                <sp:Strict/>\n              </wsp:Policy>\n\
+        \            </sp:Layout>\n          </wsp:Policy>\n        </sp:TransportBinding>\n\
+        \        <wsaw:UsingAddressing/>\n      </wsp:All>\n    </wsp:ExactlyOne>\n\
+        \  </wsp:Policy>\n  <wsdl:types>\n    <xs:schema xmlns:tns=\"http://CIS/BIR/2014/07\"\
+        \ xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" elementFormDefault=\"qualified\"\
+        \ targetNamespace=\"http://CIS/BIR/2014/07\">\n      <xs:element name=\"GetValue\"\
+        >\n        <xs:complexType>\n          <xs:sequence>\n            <xs:element\
+        \ minOccurs=\"0\" name=\"pNazwaParametru\" nillable=\"true\" type=\"xs:string\"\
+        />\n          </xs:sequence>\n        </xs:complexType>\n      </xs:element>\n\
+        \      <xs:element name=\"GetValueResponse\">\n        <xs:complexType>\n\
+        \          <xs:sequence>\n            <xs:element minOccurs=\"0\" name=\"\
+        GetValueResult\" type=\"xs:string\"/>\n          </xs:sequence>\n        </xs:complexType>\n\
+        \      </xs:element>\n    </xs:schema>\n    <xs:schema xmlns:tns=\"http://schemas.microsoft.com/2003/10/Serialization/\"\
+        \ xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" attributeFormDefault=\"qualified\"\
+        \ elementFormDefault=\"qualified\" targetNamespace=\"http://schemas.microsoft.com/2003/10/Serialization/\"\
+        >\n      <xs:element name=\"anyType\" nillable=\"true\" type=\"xs:anyType\"\
+        />\n      <xs:element name=\"anyURI\" nillable=\"true\" type=\"xs:anyURI\"\
+        />\n      <xs:element name=\"base64Binary\" nillable=\"true\" type=\"xs:base64Binary\"\
+        />\n      <xs:element name=\"boolean\" nillable=\"true\" type=\"xs:boolean\"\
+        />\n      <xs:element name=\"byte\" nillable=\"true\" type=\"xs:byte\"/>\n\
+        \      <xs:element name=\"dateTime\" nillable=\"true\" type=\"xs:dateTime\"\
+        />\n      <xs:element name=\"decimal\" nillable=\"true\" type=\"xs:decimal\"\
+        />\n      <xs:element name=\"double\" nillable=\"true\" type=\"xs:double\"\
+        />\n      <xs:element name=\"float\" nillable=\"true\" type=\"xs:float\"/>\n\
+        \      <xs:element name=\"int\" nillable=\"true\" type=\"xs:int\"/>\n    \
+        \  <xs:element name=\"long\" nillable=\"true\" type=\"xs:long\"/>\n      <xs:element\
+        \ name=\"QName\" nillable=\"true\" type=\"xs:QName\"/>\n      <xs:element\
+        \ name=\"short\" nillable=\"true\" type=\"xs:short\"/>\n      <xs:element\
+        \ name=\"string\" nillable=\"true\" type=\"xs:string\"/>\n      <xs:element\
+        \ name=\"unsignedByte\" nillable=\"true\" type=\"xs:unsignedByte\"/>\n   \
+        \   <xs:element name=\"unsignedInt\" nillable=\"true\" type=\"xs:unsignedInt\"\
+        />\n      <xs:element name=\"unsignedLong\" nillable=\"true\" type=\"xs:unsignedLong\"\
+        />\n      <xs:element name=\"unsignedShort\" nillable=\"true\" type=\"xs:unsignedShort\"\
+        />\n      <xs:element name=\"char\" nillable=\"true\" type=\"tns:char\"/>\n\
+        \      <xs:simpleType name=\"char\">\n        <xs:restriction base=\"xs:int\"\
+        />\n      </xs:simpleType>\n      <xs:element name=\"duration\" nillable=\"\
+        true\" type=\"tns:duration\"/>\n      <xs:simpleType name=\"duration\">\n\
+        \        <xs:restriction base=\"xs:duration\">\n          <xs:pattern value=\"\
+        \\-?P(\\d*D)?(T(\\d*H)?(\\d*M)?(\\d*(\\.\\d*)?S)?)?\"/>\n          <xs:minInclusive\
+        \ value=\"-P10675199DT2H48M5.4775808S\"/>\n          <xs:maxInclusive value=\"\
+        P10675199DT2H48M5.4775807S\"/>\n        </xs:restriction>\n      </xs:simpleType>\n\
+        \      <xs:element name=\"guid\" nillable=\"true\" type=\"tns:guid\"/>\n \
+        \     <xs:simpleType name=\"guid\">\n        <xs:restriction base=\"xs:string\"\
+        >\n          <xs:pattern value=\"[\\da-fA-F]{8}-[\\da-fA-F]{4}-[\\da-fA-F]{4}-[\\\
+        da-fA-F]{4}-[\\da-fA-F]{12}\"/>\n        </xs:restriction>\n      </xs:simpleType>\n\
+        \      <xs:attribute name=\"FactoryType\" type=\"xs:QName\"/>\n      <xs:attribute\
+        \ name=\"Id\" type=\"xs:ID\"/>\n      <xs:attribute name=\"Ref\" type=\"xs:IDREF\"\
+        />\n    </xs:schema>\n\t<xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\"\
+        \ elementFormDefault=\"qualified\" targetNamespace=\"http://CIS/BIR/PUBL/2014/07/DataContract\"\
+        >\n\t\t<xs:complexType name=\"ParametryWyszukiwania\">\n\t\t  <xs:sequence>\n\
+        \t\t\t<xs:element minOccurs=\"0\" name=\"Krs\" nillable=\"true\" type=\"xs:string\"\
+        />\n\t\t\t<xs:element minOccurs=\"0\" name=\"Krsy\" nillable=\"true\" type=\"\
+        xs:string\"/>\n\t\t\t<xs:element minOccurs=\"0\" name=\"Nip\" nillable=\"\
+        true\" type=\"xs:string\"/>\n\t\t\t<xs:element minOccurs=\"0\" name=\"Nipy\"\
+        \ nillable=\"true\" type=\"xs:string\"/>\n\t\t\t<xs:element minOccurs=\"0\"\
+        \ name=\"Regon\" nillable=\"true\" type=\"xs:string\"/>\n\t\t\t<xs:element\
+        \ minOccurs=\"0\" name=\"Regony14zn\" nillable=\"true\" type=\"xs:string\"\
+        />\n\t\t\t<xs:element minOccurs=\"0\" name=\"Regony9zn\" nillable=\"true\"\
+        \ type=\"xs:string\"/>\n\t\t  </xs:sequence>\n\t\t</xs:complexType>\n\t</xs:schema>\t\
+        \n    <xs:schema xmlns:xs=\"http://www.w3.org/2001/XMLSchema\" elementFormDefault=\"\
+        qualified\" targetNamespace=\"http://CIS/BIR/PUBL/2014/07\">\n      <xs:element\
+        \ name=\"Zaloguj\">\n        <xs:complexType>\n          <xs:sequence>\n \
+        \           <xs:element minOccurs=\"0\" name=\"pKluczUzytkownika\" nillable=\"\
+        true\" type=\"xs:string\"/>\n          </xs:sequence>\n        </xs:complexType>\n\
+        \      </xs:element>\n      <xs:element name=\"ZalogujResponse\">\n      \
+        \  <xs:complexType>\n          <xs:sequence>\n            <xs:element minOccurs=\"\
+        0\" name=\"ZalogujResult\" nillable=\"true\" type=\"xs:string\"/>\n      \
+        \    </xs:sequence>\n        </xs:complexType>\n      </xs:element>\n    \
+        \  <xs:element name=\"Wyloguj\">\n        <xs:complexType>\n          <xs:sequence>\n\
+        \            <xs:element minOccurs=\"0\" name=\"pIdentyfikatorSesji\" nillable=\"\
+        true\" type=\"xs:string\"/>\n          </xs:sequence>\n        </xs:complexType>\n\
+        \      </xs:element>\n      <xs:element name=\"WylogujResponse\">\n      \
+        \  <xs:complexType>\n          <xs:sequence>\n            <xs:element minOccurs=\"\
+        0\" name=\"WylogujResult\" type=\"xs:boolean\"/>\n          </xs:sequence>\n\
+        \        </xs:complexType>\n      </xs:element>\n      <xs:element name=\"\
+        DaneSzukajPodmioty\">\n        <xs:complexType>\n          <xs:sequence>\n\
+        \            <xs:element xmlns:q1=\"http://CIS/BIR/PUBL/2014/07/DataContract\"\
+        \ minOccurs=\"0\" name=\"pParametryWyszukiwania\" nillable=\"true\" type=\"\
+        q1:ParametryWyszukiwania\"/>\n          </xs:sequence>\n        </xs:complexType>\n\
+        \      </xs:element>\n      <xs:element name=\"DaneSzukajPodmiotyResponse\"\
+        >\n        <xs:complexType>\n          <xs:sequence>\n            <xs:element\
+        \ minOccurs=\"0\" name=\"DaneSzukajPodmiotyResult\" nillable=\"true\" type=\"\
+        xs:string\"/>\n          </xs:sequence>\n        </xs:complexType>\n     \
+        \ </xs:element>\n      <xs:element name=\"DanePobierzPelnyRaport\">\n    \
+        \    <xs:complexType>\n          <xs:sequence>\n            <xs:element minOccurs=\"\
+        0\" name=\"pRegon\" nillable=\"true\" type=\"xs:string\"/>\n            <xs:element\
+        \ minOccurs=\"0\" name=\"pNazwaRaportu\" nillable=\"true\" type=\"xs:string\"\
+        />\n          </xs:sequence>\n        </xs:complexType>\n      </xs:element>\n\
+        \      <xs:element name=\"DanePobierzPelnyRaportResponse\">\n        <xs:complexType>\n\
+        \          <xs:sequence>\n            <xs:element minOccurs=\"0\" name=\"\
+        DanePobierzPelnyRaportResult\" nillable=\"true\" type=\"xs:string\"/>\n  \
+        \        </xs:sequence>\n        </xs:complexType>\n      </xs:element>\n\
+        \      <xs:element name=\"DanePobierzRaportZbiorczy\">\n        <xs:complexType>\n\
+        \          <xs:sequence>\n            <xs:element minOccurs=\"0\" name=\"\
+        pDataRaportu\" nillable=\"true\" type=\"xs:string\"/>\n            <xs:element\
+        \ minOccurs=\"0\" name=\"pNazwaRaportu\" nillable=\"true\" type=\"xs:string\"\
+        />\n          </xs:sequence>\n        </xs:complexType>\n      </xs:element>\n\
+        \      <xs:element name=\"DanePobierzRaportZbiorczyResponse\">\n        <xs:complexType>\n\
+        \          <xs:sequence>\n            <xs:element minOccurs=\"0\" name=\"\
+        DanePobierzRaportZbiorczyResult\" nillable=\"true\" type=\"xs:string\"/>\n\
+        \          </xs:sequence>\n        </xs:complexType>\n      </xs:element>\n\
+        \    </xs:schema>\n  </wsdl:types>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_GetValue_InputMessage\"\
+        >\n    <wsdl:part xmlns:q1=\"http://CIS/BIR/2014/07\" element=\"q1:GetValue\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_GetValue_OutputMessage\"\
+        >\n    <wsdl:part xmlns:q2=\"http://CIS/BIR/2014/07\" element=\"q2:GetValueResponse\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_Zaloguj_InputMessage\"\
+        >\n    <wsdl:part xmlns:q3=\"http://CIS/BIR/PUBL/2014/07\" element=\"q3:Zaloguj\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_Zaloguj_OutputMessage\"\
+        >\n    <wsdl:part xmlns:q4=\"http://CIS/BIR/PUBL/2014/07\" element=\"q4:ZalogujResponse\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_Wyloguj_InputMessage\"\
+        >\n    <wsdl:part xmlns:q5=\"http://CIS/BIR/PUBL/2014/07\" element=\"q5:Wyloguj\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_Wyloguj_OutputMessage\"\
+        >\n    <wsdl:part xmlns:q6=\"http://CIS/BIR/PUBL/2014/07\" element=\"q6:WylogujResponse\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_DaneSzukaj_InputMessage\"\
+        >\n    <wsdl:part xmlns:q7=\"http://CIS/BIR/PUBL/2014/07\" element=\"q7:DaneSzukajPodmioty\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_DaneSzukaj_OutputMessage\"\
+        >\n    <wsdl:part xmlns:q8=\"http://CIS/BIR/PUBL/2014/07\" element=\"q8:DaneSzukajPodmiotyResponse\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_DanePobierzPelnyRaport_InputMessage\"\
+        >\n    <wsdl:part xmlns:q9=\"http://CIS/BIR/PUBL/2014/07\" element=\"q9:DanePobierzPelnyRaport\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_DanePobierzPelnyRaport_OutputMessage\"\
+        >\n    <wsdl:part xmlns:q10=\"http://CIS/BIR/PUBL/2014/07\" element=\"q10:DanePobierzPelnyRaportResponse\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_DanePobierzRaportZbiorczy_InputMessage\"\
+        >\n    <wsdl:part xmlns:q11=\"http://CIS/BIR/PUBL/2014/07\" element=\"q11:DanePobierzRaportZbiorczy\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:message name=\"IUslugaBIRzewnPubl_DanePobierzRaportZbiorczy_OutputMessage\"\
+        >\n    <wsdl:part xmlns:q12=\"http://CIS/BIR/PUBL/2014/07\" element=\"q12:DanePobierzRaportZbiorczyResponse\"\
+        \ name=\"parameters\"/>\n  </wsdl:message>\n  <wsdl:portType name=\"IUslugaBIRzewnPubl\"\
+        >\n    <wsdl:operation name=\"GetValue\">\n      <wsdl:input message=\"tns:IUslugaBIRzewnPubl_GetValue_InputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/2014/07/IUslugaBIR/GetValue\"/>\n      <wsdl:output\
+        \ message=\"tns:IUslugaBIRzewnPubl_GetValue_OutputMessage\" wsaw:Action=\"\
+        http://CIS/BIR/2014/07/IUslugaBIR/GetValueResponse\"/>\n    </wsdl:operation>\n\
+        \    <wsdl:operation name=\"Zaloguj\">\n      <wsdl:input message=\"tns:IUslugaBIRzewnPubl_Zaloguj_InputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj\"/>\n\
+        \      <wsdl:output message=\"tns:IUslugaBIRzewnPubl_Zaloguj_OutputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/ZalogujResponse\"\
+        />\n    </wsdl:operation>\n    <wsdl:operation name=\"Wyloguj\">\n      <wsdl:input\
+        \ message=\"tns:IUslugaBIRzewnPubl_Wyloguj_InputMessage\" wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Wyloguj\"\
+        />\n      <wsdl:output message=\"tns:IUslugaBIRzewnPubl_Wyloguj_OutputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/WylogujResponse\"\
+        />\n    </wsdl:operation>\n    <wsdl:operation name=\"DaneSzukajPodmioty\"\
+        >\n      <wsdl:input message=\"tns:IUslugaBIRzewnPubl_DaneSzukaj_InputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty\"\
+        />\n      <wsdl:output message=\"tns:IUslugaBIRzewnPubl_DaneSzukaj_OutputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse\"\
+        />\n    </wsdl:operation>\n    <wsdl:operation name=\"DanePobierzPelnyRaport\"\
+        >\n      <wsdl:input message=\"tns:IUslugaBIRzewnPubl_DanePobierzPelnyRaport_InputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport\"\
+        />\n      <wsdl:output message=\"tns:IUslugaBIRzewnPubl_DanePobierzPelnyRaport_OutputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse\"\
+        />\n    </wsdl:operation>\n    <wsdl:operation name=\"DanePobierzRaportZbiorczy\"\
+        >\n      <wsdl:input message=\"tns:IUslugaBIRzewnPubl_DanePobierzRaportZbiorczy_InputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzRaportZbiorczy\"\
+        />\n      <wsdl:output message=\"tns:IUslugaBIRzewnPubl_DanePobierzRaportZbiorczy_OutputMessage\"\
+        \ wsaw:Action=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzRaportZbiorczyResponse\"\
+        />\n    </wsdl:operation>\n  </wsdl:portType>\n  <wsdl:binding name=\"e3\"\
+        \ type=\"tns:IUslugaBIRzewnPubl\">\n    <wsp:PolicyReference URI=\"#e3_policy\"\
+        />\n    <soap12:binding transport=\"http://schemas.xmlsoap.org/soap/http\"\
+        />\n    <wsdl:operation name=\"GetValue\">\n      <soap12:operation soapAction=\"\
+        http://CIS/BIR/2014/07/IUslugaBIR/GetValue\" style=\"document\"/>\n      <wsdl:input>\n\
+        \        <soap12:body use=\"literal\"/>\n      </wsdl:input>\n      <wsdl:output>\n\
+        \        <soap12:body use=\"literal\"/>\n      </wsdl:output>\n    </wsdl:operation>\n\
+        \    <wsdl:operation name=\"Zaloguj\">\n      <soap12:operation soapAction=\"\
+        http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj\" style=\"document\"\
+        />\n      <wsdl:input>\n        <soap12:body use=\"literal\"/>\n      </wsdl:input>\n\
+        \      <wsdl:output>\n        <soap12:body use=\"literal\"/>\n      </wsdl:output>\n\
+        \    </wsdl:operation>\n    <wsdl:operation name=\"Wyloguj\">\n      <soap12:operation\
+        \ soapAction=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Wyloguj\" style=\"\
+        document\"/>\n      <wsdl:input>\n        <soap12:body use=\"literal\"/>\n\
+        \      </wsdl:input>\n      <wsdl:output>\n        <soap12:body use=\"literal\"\
+        />\n      </wsdl:output>\n    </wsdl:operation>\n    <wsdl:operation name=\"\
+        DaneSzukajPodmioty\">\n      <soap12:operation soapAction=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty\"\
+        \ style=\"document\"/>\n      <wsdl:input>\n        <soap12:body use=\"literal\"\
+        />\n      </wsdl:input>\n      <wsdl:output>\n        <soap12:body use=\"\
+        literal\"/>\n      </wsdl:output>\n    </wsdl:operation>\n    <wsdl:operation\
+        \ name=\"DanePobierzPelnyRaport\">\n      <soap12:operation soapAction=\"\
+        http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport\" style=\"\
+        document\"/>\n      <wsdl:input>\n        <soap12:body use=\"literal\"/>\n\
+        \      </wsdl:input>\n      <wsdl:output>\n        <soap12:body use=\"literal\"\
+        />\n      </wsdl:output>\n    </wsdl:operation>\n    <wsdl:operation name=\"\
+        DanePobierzRaportZbiorczy\">\n      <soap12:operation soapAction=\"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzRaportZbiorczy\"\
+        \ style=\"document\"/>\n      <wsdl:input>\n        <soap12:body use=\"literal\"\
+        />\n      </wsdl:input>\n      <wsdl:output>\n        <soap12:body use=\"\
+        literal\"/>\n      </wsdl:output>\n    </wsdl:operation>\n  </wsdl:binding>\n\
+        \  <wsdl:service name=\"UslugaBIRzewnPubl\">\n    <wsdl:port binding=\"tns:e3\"\
+        \ name=\"e3\">\n      <soap12:address location=\"https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc\"\
+        />\n      <wsa10:EndpointReference>\n        <wsa10:Address>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa10:Address>\n\
+        \      </wsa10:EndpointReference>\n    </wsdl:port>\n  </wsdl:service>\n</wsdl:definitions>\n"
+    headers:
+      Accept-Ranges:
+      - bytes
+      Content-Length:
+      - '16280'
+      Content-Type:
+      - text/xml
+      Date:
+      - Sat, 19 Oct 2019 11:25:49 GMT
+      ETag:
+      - '"2ffb15ce416d51:0"'
+      Last-Modified:
+      - Thu, 30 May 2019 12:36:54 GMT
+      Server:
+      - Microsoft-IIS/7.5
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj</wsa:Action><wsa:MessageID>urn:uuid:f421af9b-997d-4759-ba34-6e98dad2476a</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:Zaloguj
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pKluczUzytkownika>abcde12345abcde12345</ns0:pKluczUzytkownika></ns0:Zaloguj></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '625'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"'
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:bace5e4f-38b0-44a3-bc7a-428165a0d558+id=1602\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/ZalogujResponse</a:Action><a:RelatesTo>urn:uuid:f421af9b-997d-4759-ba34-6e98dad2476a</a:RelatesTo></s:Header><s:Body><ZalogujResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><ZalogujResult>hpw49e46p2585r4e9353</ZalogujResult></ZalogujResponse></s:Body></s:Envelope>\r\
+        \n--uuid:bace5e4f-38b0-44a3-bc7a-428165a0d558+id=1602--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '718'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:bace5e4f-38b0-44a3-bc7a-428165a0d558+id=1602";start-info="application/soap+xml"
+      Date:
+      - Sat, 19 Oct 2019 11:25:49 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty</wsa:Action><wsa:MessageID>urn:uuid:8ae6cf2d-149c-4473-8116-1d050f71e481</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DaneSzukajPodmioty
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pParametryWyszukiwania><ns1:Nip
+      xmlns:ns1="http://CIS/BIR/PUBL/2014/07/DataContract">1112223344</ns1:Nip></ns0:pParametryWyszukiwania></ns0:DaneSzukajPodmioty></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '730'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"'
+      sid:
+      - hpw49e46p2585r4e9353
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:bace5e4f-38b0-44a3-bc7a-428165a0d558+id=1603\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action><a:RelatesTo>urn:uuid:8ae6cf2d-149c-4473-8116-1d050f71e481</a:RelatesTo></s:Header><s:Body><DaneSzukajPodmiotyResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;ErrorCode&gt;4&lt;/ErrorCode&gt;&#xD;\n    &lt;ErrorMessagePl&gt;Nie\
+        \ znaleziono podmiotu dla podanych kryteri\xF3w wyszukiwania.&lt;/ErrorMessagePl&gt;&#xD;\n\
+        \    &lt;ErrorMessageEn&gt;No data found for the specified search criteria.&lt;/ErrorMessageEn&gt;&#xD;\n\
+        \    &lt;Nip&gt;1112223344&lt;/Nip&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\
+        \n--uuid:bace5e4f-38b0-44a3-bc7a-428165a0d558+id=1603--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1133'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:bace5e4f-38b0-44a3-bc7a-428165a0d558+id=1603";start-info="application/soap+xml"
+      Date:
+      - Sat, 19 Oct 2019 11:25:49 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1

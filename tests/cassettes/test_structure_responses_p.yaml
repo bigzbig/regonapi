@@ -1,0 +1,260 @@
+interactions:
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj</wsa:Action><wsa:MessageID>urn:uuid:15c949e2-0fe2-48ee-9fc7-780298d7b22a</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:Zaloguj
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pKluczUzytkownika>abcde12345abcde12345</ns0:pKluczUzytkownika></ns0:Zaloguj></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '625'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/Zaloguj"'
+      sid:
+      - 67yvkmp78rekbp3pmfyg
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2232\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/ZalogujResponse</a:Action><a:RelatesTo>urn:uuid:15c949e2-0fe2-48ee-9fc7-780298d7b22a</a:RelatesTo></s:Header><s:Body><ZalogujResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><ZalogujResult>b2k628e3k9b6sm65hx6n</ZalogujResult></ZalogujResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2232--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '718'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2232";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:24 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty</wsa:Action><wsa:MessageID>urn:uuid:20e7b56b-fcfd-4345-9ae5-c5da55e64b7c</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DaneSzukajPodmioty
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pParametryWyszukiwania><ns1:Nip
+      xmlns:ns1="http://CIS/BIR/PUBL/2014/07/DataContract">5170359458</ns1:Nip></ns0:pParametryWyszukiwania></ns0:DaneSzukajPodmioty></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '730'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmioty"'
+      sid:
+      - b2k628e3k9b6sm65hx6n
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2233\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DaneSzukajPodmiotyResponse</a:Action><a:RelatesTo>urn:uuid:20e7b56b-fcfd-4345-9ae5-c5da55e64b7c</a:RelatesTo></s:Header><s:Body><DaneSzukajPodmiotyResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DaneSzukajPodmiotyResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;Regon&gt;180853177&lt;/Regon&gt;&#xD;\n    &lt;Nip&gt;5170359458&lt;/Nip&gt;&#xD;\n\
+        \    &lt;StatusNip /&gt;&#xD;\n    &lt;Nazwa&gt;ASSECO SYSTEMS SP\xD3\u0141\
+        KA AKCYJNA&lt;/Nazwa&gt;&#xD;\n    &lt;Wojewodztwo&gt;PODKARPACKIE&lt;/Wojewodztwo&gt;&#xD;\n\
+        \    &lt;Powiat&gt;m. Rzesz\xF3w&lt;/Powiat&gt;&#xD;\n    &lt;Gmina&gt;M.\
+        \ Rzesz\xF3w&lt;/Gmina&gt;&#xD;\n    &lt;Miejscowosc&gt;Rzesz\xF3w&lt;/Miejscowosc&gt;&#xD;\n\
+        \    &lt;KodPocztowy&gt;35-322&lt;/KodPocztowy&gt;&#xD;\n    &lt;Ulica&gt;ul.\
+        \ Test-Krucza&lt;/Ulica&gt;&#xD;\n    &lt;NrNieruchomosci&gt;14&lt;/NrNieruchomosci&gt;&#xD;\n\
+        \    &lt;NrLokalu /&gt;&#xD;\n    &lt;Typ&gt;P&lt;/Typ&gt;&#xD;\n    &lt;SilosID&gt;6&lt;/SilosID&gt;&#xD;\n\
+        \    &lt;DataZakonczeniaDzialalnosci /&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DaneSzukajPodmiotyResult></DaneSzukajPodmiotyResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2233--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1544'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2233";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:24 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:6cc0f875-9c32-4d16-a886-2c188e49673d</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>180853177</ns0:pRegon><ns0:pNazwaRaportu>PublDaneRaportDzialalnosciPrawnej</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '709'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - b2k628e3k9b6sm65hx6n
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2234\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:6cc0f875-9c32-4d16-a886-2c188e49673d</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;praw_pkdKod&gt;7010Z&lt;/praw_pkdKod&gt;&#xD;\n\
+        \    &lt;praw_pkdNazwa&gt;DZIA\u0141ALNO\u015A\u0106 FIRM CENTRALNYCH (HEAD\
+        \ OFFICES) I HOLDING\xD3W, Z WY\u0141\u0104CZENIEM HOLDING\xD3W FINANSOWYCH&lt;/praw_pkdNazwa&gt;&#xD;\n\
+        \    &lt;praw_pkdPrzewazajace&gt;1&lt;/praw_pkdPrzewazajace&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;praw_pkdKod&gt;6420Z&lt;/praw_pkdKod&gt;&#xD;\n\
+        \    &lt;praw_pkdNazwa&gt;DZIA\u0141ALNO\u015A\u0106 HOLDING\xD3W FINANSOWYCH&lt;/praw_pkdNazwa&gt;&#xD;\n\
+        \    &lt;praw_pkdPrzewazajace&gt;0&lt;/praw_pkdPrzewazajace&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;praw_pkdKod&gt;6201Z&lt;/praw_pkdKod&gt;&#xD;\n\
+        \    &lt;praw_pkdNazwa&gt;DZIA\u0141ALNO\u015A\u0106 ZWI\u0104ZANA Z OPROGRAMOWANIEM&lt;/praw_pkdNazwa&gt;&#xD;\n\
+        \    &lt;praw_pkdPrzewazajace&gt;0&lt;/praw_pkdPrzewazajace&gt;&#xD;\n  &lt;/dane&gt;&#xD;\n\
+        &lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2234--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '1630'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2234";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:24 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://www.w3.org/2003/05/soap-envelope"><soap-env:Header
+      xmlns:wsa="http://www.w3.org/2005/08/addressing"><wsa:Action>http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport</wsa:Action><wsa:MessageID>urn:uuid:45a2495f-bb73-4eab-a182-6e9c3514833a</wsa:MessageID><wsa:To>https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc</wsa:To></soap-env:Header><soap-env:Body><ns0:DanePobierzPelnyRaport
+      xmlns:ns0="http://CIS/BIR/PUBL/2014/07"><ns0:pRegon>180853177</ns0:pRegon><ns0:pNazwaRaportu>BIR11OsPrawna</ns0:pNazwaRaportu></ns0:DanePobierzPelnyRaport></soap-env:Body></soap-env:Envelope>'
+    headers:
+      Content-Length:
+      - '689'
+      Content-Type:
+      - application/soap+xml; charset=utf-8; action="http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"
+      SOAPAction:
+      - '"http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaport"'
+      sid:
+      - b2k628e3k9b6sm65hx6n
+    method: POST
+    uri: https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc
+  response:
+    body:
+      string: "\r\n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2235\r\nContent-ID:\
+        \ <http://tempuri.org/0>\r\nContent-Transfer-Encoding: 8bit\r\nContent-Type:\
+        \ application/xop+xml;charset=utf-8;type=\"application/soap+xml\"\r\n\r\n\
+        <s:Envelope xmlns:s=\"http://www.w3.org/2003/05/soap-envelope\" xmlns:a=\"\
+        http://www.w3.org/2005/08/addressing\"><s:Header><a:Action s:mustUnderstand=\"\
+        1\">http://CIS/BIR/PUBL/2014/07/IUslugaBIRzewnPubl/DanePobierzPelnyRaportResponse</a:Action><a:RelatesTo>urn:uuid:45a2495f-bb73-4eab-a182-6e9c3514833a</a:RelatesTo></s:Header><s:Body><DanePobierzPelnyRaportResponse\
+        \ xmlns=\"http://CIS/BIR/PUBL/2014/07\"><DanePobierzPelnyRaportResult>&lt;root&gt;&#xD;\n\
+        \  &lt;dane&gt;&#xD;\n    &lt;praw_regon9&gt;180853177&lt;/praw_regon9&gt;&#xD;\n\
+        \    &lt;praw_nip&gt;5170359458&lt;/praw_nip&gt;&#xD;\n    &lt;praw_statusNip\
+        \ /&gt;&#xD;\n    &lt;praw_nazwa&gt;ASSECO SYSTEMS SP\xD3\u0141KA AKCYJNA&lt;/praw_nazwa&gt;&#xD;\n\
+        \    &lt;praw_nazwaSkrocona /&gt;&#xD;\n    &lt;praw_numerWRejestrzeEwidencji&gt;0000421310&lt;/praw_numerWRejestrzeEwidencji&gt;&#xD;\n\
+        \    &lt;praw_dataWpisuDoRejestruEwidencji&gt;2012-05-21&lt;/praw_dataWpisuDoRejestruEwidencji&gt;&#xD;\n\
+        \    &lt;praw_dataPowstania&gt;2012-05-21&lt;/praw_dataPowstania&gt;&#xD;\n\
+        \    &lt;praw_dataRozpoczeciaDzialalnosci&gt;2012-05-21&lt;/praw_dataRozpoczeciaDzialalnosci&gt;&#xD;\n\
+        \    &lt;praw_dataWpisuDoRegon&gt;2012-06-01&lt;/praw_dataWpisuDoRegon&gt;&#xD;\n\
+        \    &lt;praw_dataZawieszeniaDzialalnosci /&gt;&#xD;\n    &lt;praw_dataWznowieniaDzialalnosci\
+        \ /&gt;&#xD;\n    &lt;praw_dataZaistnieniaZmiany&gt;2012-06-01&lt;/praw_dataZaistnieniaZmiany&gt;&#xD;\n\
+        \    &lt;praw_dataZakonczeniaDzialalnosci /&gt;&#xD;\n    &lt;praw_dataSkresleniaZRegon\
+        \ /&gt;&#xD;\n    &lt;praw_dataOrzeczeniaOUpadlosci /&gt;&#xD;\n    &lt;praw_dataZakonczeniaPostepowaniaUpadlosciowego\
+        \ /&gt;&#xD;\n    &lt;praw_adSiedzKraj_Symbol&gt;PL&lt;/praw_adSiedzKraj_Symbol&gt;&#xD;\n\
+        \    &lt;praw_adSiedzWojewodztwo_Symbol&gt;18&lt;/praw_adSiedzWojewodztwo_Symbol&gt;&#xD;\n\
+        \    &lt;praw_adSiedzPowiat_Symbol&gt;63&lt;/praw_adSiedzPowiat_Symbol&gt;&#xD;\n\
+        \    &lt;praw_adSiedzGmina_Symbol&gt;011&lt;/praw_adSiedzGmina_Symbol&gt;&#xD;\n\
+        \    &lt;praw_adSiedzKodPocztowy&gt;35322&lt;/praw_adSiedzKodPocztowy&gt;&#xD;\n\
+        \    &lt;praw_adSiedzMiejscowoscPoczty_Symbol&gt;0974133&lt;/praw_adSiedzMiejscowoscPoczty_Symbol&gt;&#xD;\n\
+        \    &lt;praw_adSiedzMiejscowosc_Symbol&gt;0974133&lt;/praw_adSiedzMiejscowosc_Symbol&gt;&#xD;\n\
+        \    &lt;praw_adSiedzUlica_Symbol&gt;10013&lt;/praw_adSiedzUlica_Symbol&gt;&#xD;\n\
+        \    &lt;praw_adSiedzNumerNieruchomosci&gt;14&lt;/praw_adSiedzNumerNieruchomosci&gt;&#xD;\n\
+        \    &lt;praw_adSiedzNumerLokalu /&gt;&#xD;\n    &lt;praw_adSiedzNietypoweMiejsceLokalizacji\
+        \ /&gt;&#xD;\n    &lt;praw_numerTelefonu /&gt;&#xD;\n    &lt;praw_numerWewnetrznyTelefonu\
+        \ /&gt;&#xD;\n    &lt;praw_numerFaksu /&gt;&#xD;\n    &lt;praw_adresEmail\
+        \ /&gt;&#xD;\n    &lt;praw_adresStronyinternetowej /&gt;&#xD;\n    &lt;praw_adSiedzKraj_Nazwa&gt;POLSKA&lt;/praw_adSiedzKraj_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_adSiedzWojewodztwo_Nazwa&gt;PODKARPACKIE&lt;/praw_adSiedzWojewodztwo_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_adSiedzPowiat_Nazwa&gt;m. Rzesz\xF3w&lt;/praw_adSiedzPowiat_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_adSiedzGmina_Nazwa&gt;M. Rzesz\xF3w&lt;/praw_adSiedzGmina_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_adSiedzMiejscowosc_Nazwa&gt;Rzesz\xF3w&lt;/praw_adSiedzMiejscowosc_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_adSiedzMiejscowoscPoczty_Nazwa&gt;Rzesz\xF3w&lt;/praw_adSiedzMiejscowoscPoczty_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_adSiedzUlica_Nazwa&gt;ul. Test-Krucza&lt;/praw_adSiedzUlica_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_podstawowaFormaPrawna_Symbol&gt;1&lt;/praw_podstawowaFormaPrawna_Symbol&gt;&#xD;\n\
+        \    &lt;praw_szczegolnaFormaPrawna_Symbol&gt;16&lt;/praw_szczegolnaFormaPrawna_Symbol&gt;&#xD;\n\
+        \    &lt;praw_formaFinansowania_Symbol&gt;1&lt;/praw_formaFinansowania_Symbol&gt;&#xD;\n\
+        \    &lt;praw_formaWlasnosci_Symbol&gt;215&lt;/praw_formaWlasnosci_Symbol&gt;&#xD;\n\
+        \    &lt;praw_organZalozycielski_Symbol /&gt;&#xD;\n    &lt;praw_organRejestrowy_Symbol&gt;071690010&lt;/praw_organRejestrowy_Symbol&gt;&#xD;\n\
+        \    &lt;praw_rodzajRejestruEwidencji_Symbol&gt;138&lt;/praw_rodzajRejestruEwidencji_Symbol&gt;&#xD;\n\
+        \    &lt;praw_podstawowaFormaPrawna_Nazwa&gt;OSOBA PRAWNA&lt;/praw_podstawowaFormaPrawna_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_szczegolnaFormaPrawna_Nazwa&gt;SP\xD3\u0141KI AKCYJNE&lt;/praw_szczegolnaFormaPrawna_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_formaFinansowania_Nazwa&gt;JEDNOSTKA SAMOFINANSUJ\u0104CA NIE\
+        \ B\u0118D\u0104CA JEDNOSTK\u0104 BUD\u017BETOW\u0104 LUB SAMORZ\u0104DOWYM\
+        \ ZAK\u0141ADEM BUD\u017BETOWYM&lt;/praw_formaFinansowania_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_formaWlasnosci_Nazwa&gt;W\u0141ASNO\u015A\u0106 PRYWATNA KRAJOWA\
+        \ POZOSTA\u0141A&lt;/praw_formaWlasnosci_Nazwa&gt;&#xD;\n    &lt;praw_organZalozycielski_Nazwa\
+        \ /&gt;&#xD;\n    &lt;praw_organRejestrowy_Nazwa&gt;S\u0104D REJONOWY W RZESZOWIE,\
+        \ XII WYDZIA\u0141 GOSPODARCZY KRAJOWEGO REJESTRU S\u0104DOWEGO&lt;/praw_organRejestrowy_Nazwa&gt;&#xD;\n\
+        \    &lt;praw_rodzajRejestruEwidencji_Nazwa&gt;REJESTR PRZEDSI\u0118BIORC\xD3\
+        W&lt;/praw_rodzajRejestruEwidencji_Nazwa&gt;&#xD;\n    &lt;praw_liczbaJednLokalnych&gt;0&lt;/praw_liczbaJednLokalnych&gt;&#xD;\n\
+        \  &lt;/dane&gt;&#xD;\n&lt;/root&gt;</DanePobierzPelnyRaportResult></DanePobierzPelnyRaportResponse></s:Body></s:Envelope>\r\
+        \n--uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2235--\r\n"
+    headers:
+      Cache-Control:
+      - private
+      Content-Length:
+      - '5177'
+      Content-Type:
+      - multipart/related; type="application/xop+xml";start="<http://tempuri.org/0>";boundary="uuid:2e802d3c-4264-423f-ad51-a3cb0e4f541f+id=2235";start-info="application/soap+xml"
+      Date:
+      - Sun, 20 Oct 2019 14:52:24 GMT
+      MIME-Version:
+      - '1.0'
+      Server:
+      - Microsoft-IIS/7.5
+      X-AspNet-Version:
+      - 2.0.50727
+      X-Powered-By:
+      - ASP.NET
+    status:
+      code: 200
+      message: OK
+version: 1
