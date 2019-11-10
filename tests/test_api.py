@@ -17,8 +17,8 @@ from tests.utils import (
 )
 
 vcr = VCR(
-    path_transformer=VCR.ensure_suffix('.yaml'),
-    cassette_library_dir=os.path.join('tests', 'cassettes')
+    path_transformer=VCR.ensure_suffix(".yaml"),
+    cassette_library_dir=os.path.join("tests", "cassettes"),
 )
 
 
@@ -28,14 +28,18 @@ def api():
 
 
 def test_required_lookup(api):
-    with pytest.raises(AttributeError, match=r"At least one parameter \(nip, regon, krs\) is required."):
+    with pytest.raises(
+        AttributeError, match=r"At least one parameter \(nip, regon, krs\) is required."
+    ):
         api.find_by()
 
 
 @vcr.use_cassette
 def test_not_found(api):
-    with pytest.raises(ValueError, match=r"No data found for the specified search criteria."):
-        api.find_by(nip='1112223344')
+    with pytest.raises(
+        ValueError, match=r"No data found for the specified search criteria."
+    ):
+        api.find_by(nip="1112223344")
 
 
 @vcr.use_cassette

@@ -10,11 +10,15 @@ from zeep import Transport
 logger = logging.getLogger(__name__)
 
 
-WSDL = "https://wyszukiwarkaregon.stat.gov.pl/wsBIR/wsdl/UslugaBIRzewnPubl-ver11-prod.wsdl"
+WSDL = (
+    "https://wyszukiwarkaregon.stat.gov.pl/wsBIR/wsdl/UslugaBIRzewnPubl-ver11-prod.wsdl"
+)
 ENDPOINT = "https://wyszukiwarkaregon.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc"
 
 WSDL_SANDBOX = "https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/wsdl/UslugaBIRzewnPubl-ver11-test.wsdl"
-ENDPOINT_SANDBOX = "https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc"
+ENDPOINT_SANDBOX = (
+    "https://wyszukiwarkaregontest.stat.gov.pl/wsBIR/UslugaBIRzewnPubl.svc"
+)
 APIKEY_SANDBOX = "abcde12345abcde12345"
 
 
@@ -40,7 +44,10 @@ DETAILED_REPORT_NAMES_BY_TYPE = {
     "LP": "BIR11JednLokalnaOsPrawnej",
 }
 
-PKD_REPORT_TYPE = {"F": "PublDaneRaportDzialalnosciFizycznej", "P": "PublDaneRaportDzialalnosciPrawnej"}
+PKD_REPORT_TYPE = {
+    "F": "PublDaneRaportDzialalnosciFizycznej",
+    "P": "PublDaneRaportDzialalnosciPrawnej",
+}
 
 
 class Client(object):
@@ -60,7 +67,9 @@ class Client(object):
 
     def _call(self, action: str, *args, **kwargs) -> str:
         if not self.service:
-            self.service = self.client.create_service("{http://tempuri.org/}e3", self.endpoint)
+            self.service = self.client.create_service(
+                "{http://tempuri.org/}e3", self.endpoint
+            )
             self.headers.update({"sid": self._login()})
 
         service = getattr(self.service, action)
@@ -69,9 +78,17 @@ class Client(object):
     def _login(self) -> str:
         return self._call("Zaloguj", self.api_key)
 
-    def search(self, *, nip: Optional[str] = None, regon: Optional[str] = None, krs: Optional[str] = None) -> str:
+    def search(
+        self,
+        *,
+        nip: Optional[str] = None,
+        regon: Optional[str] = None,
+        krs: Optional[str] = None,
+    ) -> str:
         if not any([nip, regon, krs]):
-            raise AttributeError("At least one parameter (nip, regon, krs) is required.")
+            raise AttributeError(
+                "At least one parameter (nip, regon, krs) is required."
+            )
         if nip:
             search_params = {"Nip": nip}
         elif regon:
@@ -80,16 +97,26 @@ class Client(object):
             search_params = {"Krs": krs}
         return self.validate_result(self._call("DaneSzukajPodmioty", search_params))
 
-    def get_full_report(self, regon: str, company_type: str, silos_id: Optional[int] = None) -> str:
+    def get_full_report(
+        self, regon: str, company_type: str, silos_id: Optional[int] = None
+    ) -> str:
         report_name = DETAILED_REPORT_NAMES_BY_TYPE.get(company_type)
         if isinstance(report_name, dict):
             report_name = report_name[silos_id]
-        return self.validate_result(self._call("DanePobierzPelnyRaport", regon, report_name))
+        return self.validate_result(
+            self._call("DanePobierzPelnyRaport", regon, report_name)
+        )
 
     def get_pkd_raport(self, regon: str, company_type: str) -> str:
-        report_type = PKD_REPORT_TYPE[company_type] if company_type in PKD_REPORT_TYPE else PKD_REPORT_TYPE["F"]
+        report_type = (
+            PKD_REPORT_TYPE[company_type]
+            if company_type in PKD_REPORT_TYPE
+            else PKD_REPORT_TYPE["F"]
+        )
 
-        return self.validate_result(self._call("DanePobierzPelnyRaport", regon, report_type))
+        return self.validate_result(
+            self._call("DanePobierzPelnyRaport", regon, report_type)
+        )
 
     @staticmethod
     def validate_result(result: str) -> str:
@@ -105,6 +132,8 @@ class Client(object):
             raise ValueError(f"Unexpected response: {result}")
 
         if hasattr(result_object.dane, "ErrorCode"):
-            raise ValueError(f"code: {result_object.dane.ErrorCode} - {result_object.dane.ErrorMessageEn}")
+            raise ValueError(
+                f"code: {result_object.dane.ErrorCode} - {result_object.dane.ErrorMessageEn}"
+            )
 
         return result

@@ -37,7 +37,13 @@ def check_structure_pkd(pkd):
 
 
 def check_structure_contact(contact):
-    assert sorted(list(contact)) == ["email", "nr_faksu", "nr_telefonu", "nr_wewnetrzny_telefonu", "www"]
+    assert sorted(list(contact)) == [
+        "email",
+        "nr_faksu",
+        "nr_telefonu",
+        "nr_wewnetrzny_telefonu",
+        "www",
+    ]
 
 
 def check_structure_report_f1(details):

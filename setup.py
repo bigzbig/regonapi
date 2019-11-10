@@ -27,17 +27,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
         "Topic :: Utilities",
     ],
-    setup_requires=[
-        "pytest-runner",
-        "flake8",
-        "mypy",
-    ],
-    install_requires=[
-        "zeep>=3.2.0",
-        "lxml>=4.4.1",
-    ],
-    tests_require=[
-        "pytest>=5.2.1",
-        "vcrpy>=2.1.0",
-    ]
+    setup_requires=["pytest-runner", "flake8", "mypy", "black",],
+    install_requires=["zeep>=3.2.0", "lxml>=4.4.1",],
+    tests_require=["pytest>=5.2.1", "vcrpy>=2.1.0",],
 )

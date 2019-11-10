@@ -14,7 +14,9 @@ class RegonAPI:
     def __init__(self, api_key: Optional[str] = None):
         self._client = Client(api_key=api_key)
 
-    def _format(self, result: ObjectifiedElement, remove_prefix: bool = False) -> Dict[str, Any]:
+    def _format(
+        self, result: ObjectifiedElement, remove_prefix: bool = False
+    ) -> Dict[str, Any]:
         formatted_result = {}
         for field in result.getchildren():
             name = field.tag
@@ -56,7 +58,9 @@ class RegonAPI:
         word = word.replace("-", "_")
         return word.lower()
 
-    def find_by(self, *, nip: str = None, regon: str = None, krs: str = None) -> List[Dict[str, Any]]:
+    def find_by(
+        self, *, nip: str = None, regon: str = None, krs: str = None
+    ) -> List[Dict[str, Any]]:
         field_map = [
             ("data_zakonczenia_dzialalnosci", None, None),
             ("gmina", None, None),
@@ -77,15 +81,22 @@ class RegonAPI:
         result = self._client.search(nip=nip, regon=regon, krs=krs)
         # In this case the normalization was added only because the API sandbox returns a different data structure
         # for endpoint 'DaneSzukajPodmioty' than the production version. The 'Ulica' field is missing.
-        return [self._normalize(self._format(item), field_map) for item in objectify.fromstring(result).dane]
+        return [
+            self._normalize(self._format(item), field_map)
+            for item in objectify.fromstring(result).dane
+        ]
 
     def get_full_report(self, company_data: Dict[str, Any]) -> List[Dict[str, Any]]:
         try:
             result = self._client.get_full_report(
-                regon=company_data["regon"], company_type=company_data["typ"], silos_id=company_data["silos_id"]
+                regon=company_data["regon"],
+                company_type=company_data["typ"],
+                silos_id=company_data["silos_id"],
             )
         except KeyError:
-            raise ValueError("The company_data parameter should be single item of result of method 'find_by'")
+            raise ValueError(
+                "The company_data parameter should be single item of result of method 'find_by'"
+            )
         return self._format(objectify.fromstring(result).dane, remove_prefix=True)
 
     def get_pkd(self, company_data: Dict[str, Any]) -> List[Dict[str, Any]]:
@@ -95,9 +106,13 @@ class RegonAPI:
             ("pkd_przewazajace", "przewazajace", lambda v: bool(int(v))),
         ]
         try:
-            result = self._client.get_pkd_raport(regon=company_data["regon"], company_type=company_data["typ"])
+            result = self._client.get_pkd_raport(
+                regon=company_data["regon"], company_type=company_data["typ"]
+            )
         except KeyError:
-            raise ValueError("The company_data parameter should be single item of result of method 'find_by'")
+            raise ValueError(
+                "The company_data parameter should be single item of result of method 'find_by'"
+            )
 
         return [
             self._normalize(self._format(item, remove_prefix=True), field_map=field_map)
@@ -122,7 +137,9 @@ class RegonAPI:
                 "wojewodztwo": company_data["wojewodztwo"],
             }
         except KeyError:
-            raise ValueError("The company_data parameter should be single item of result of method 'find_by'")
+            raise ValueError(
+                "The company_data parameter should be single item of result of method 'find_by'"
+            )
 
     def get_contact(self, full_report_data: Dict[str, Any]) -> Dict[str, Any]:
         if not ("regon9" in full_report_data or "regon14" in full_report_data):
