@@ -3,6 +3,7 @@ import os
 import pytest
 from vcr import VCR
 
+from regonapi.exceptions import RegonAPIError
 from regonapi.api import RegonAPI
 from tests.utils import (
     check_structure_base_data,
@@ -37,7 +38,7 @@ def test_required_lookup(api):
 @vcr.use_cassette
 def test_not_found(api):
     with pytest.raises(
-        ValueError, match=r"No data found for the specified search criteria."
+        RegonAPIError, match=r"No data found for the specified search criteria."
     ):
         api.find_by(nip="1112223344")
 

@@ -7,6 +7,8 @@ from requests import Session
 from zeep import Client as ZeepClient
 from zeep import Transport
 
+from regonapi.exceptions import EmptyResponse, UnexpectedResponse, RegonAPIError
+
 logger = logging.getLogger(__name__)
 
 
@@ -121,19 +123,17 @@ class Client(object):
     @staticmethod
     def validate_result(result: str) -> str:
         if not result:
-            raise ValueError(f"Empty result - probably problem with authorisation")
+            raise EmptyResponse()
 
         try:
             result_object = objectify.fromstring(result)
         except XMLSyntaxError:
-            raise ValueError(f"Unexpected response: {result}")
+            raise UnexpectedResponse(f"Unexpected response: {result}")
 
         if not hasattr(result_object, "dane"):
-            raise ValueError(f"Unexpected response: {result}")
+            raise UnexpectedResponse(f"Unexpected response: {result}")
 
         if hasattr(result_object.dane, "ErrorCode"):
-            raise ValueError(
-                f"code: {result_object.dane.ErrorCode} - {result_object.dane.ErrorMessageEn}"
-            )
+            raise RegonAPIError(result_object.dane.ErrorMessageEn, result_object.dane.ErrorCode)
 
         return result
